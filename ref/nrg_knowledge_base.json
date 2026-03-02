@@ -1,0 +1,316 @@
+{
+  "company": {
+    "name": "NRG Innovations",
+    "website": "https://getnrg.com",
+    "phone": "626-369-2668",
+    "address": "5218 Rivergrade Rd, Irwindale, CA 91706",
+    "founded": 2003,
+    "description": "NRG Innovations is a California-based aftermarket automotive parts manufacturer specializing in steering wheels, quick releases, short hubs, racing seats, shift knobs, and exterior/interior performance products. Founded by a group of enthusiasts, NRG has become a leading brand in drift, drag, circuit, and autocross racing."
+  },
+
+  "policies": {
+    "shipping": {
+      "standard": "5-7 business days",
+      "expedited": "2-3 business days",
+      "overnight": "Next business day",
+      "free_shipping_threshold": "$99",
+      "international": "Available to select countries. Duties and taxes are the responsibility of the buyer.",
+      "notes": "Orders placed before 12pm PST on business days ship the same day."
+    },
+    "returns": {
+      "window_days": 30,
+      "condition": "Items must be unused, uninstalled, and in original packaging.",
+      "non_returnable": ["Installed parts", "Electrical components", "Custom or special-order items"],
+      "process": "Contact support with your order number and reason. A return label will be emailed within 1-2 business days.",
+      "refund_timeline": "Refunds processed within 5-7 business days of receiving the return."
+    },
+    "warranty": {
+      "duration": "1 year from date of purchase",
+      "covers": "Manufacturing defects and material failures under normal use.",
+      "does_not_cover": "Damage from improper installation, accidents, racing incidents, or normal wear and tear.",
+      "claim_process": "Email support@getnrg.com with photos, order number, and description of the defect."
+    },
+    "authenticity": {
+      "policy": "NRG Innovations guarantees all products sold on getnrg.com are 100% authentic. Counterfeit NRG products exist in the market — always buy from authorized dealers.",
+      "authorized_dealers": "Find authorized dealers using the Store Locator on getnrg.com."
+    }
+  },
+
+  "products": {
+    "steering_wheels": [
+      {
+        "id": "SW-001",
+        "name": "NRG Deep Black Leather 350mm Reinforced Steering Wheel - Red Center",
+        "part_number": "RST-006RD",
+        "category": "Steering Wheels > Leather",
+        "price": 147.40,
+        "diameter_mm": 350,
+        "material": "Leather",
+        "color": "Black with red center",
+        "features": ["Reinforced spoke design", "Deep dish", "Horn button included", "Bolt pattern: 6x70mm"],
+        "compatible_with": "Universal - requires short hub and quick release adapter",
+        "in_stock": true,
+        "description": "A classic deep black leather steering wheel with a bold red center accent. Reinforced spokes provide rigidity for spirited driving. Perfect for street or track use."
+      },
+      {
+        "id": "SW-002",
+        "name": "NRG Green Luminor 350mm Woodgrain Steering Wheel",
+        "part_number": "ST-015MC-GL",
+        "category": "Steering Wheels > Wood Grain",
+        "price": 160.00,
+        "diameter_mm": 350,
+        "material": "Woodgrain / Polyurethane",
+        "color": "Green Luminor",
+        "features": ["Glow-in-the-dark luminor trim", "Woodgrain finish", "Horn button included", "Bolt pattern: 6x70mm"],
+        "compatible_with": "Universal - requires short hub and quick release adapter",
+        "in_stock": true,
+        "description": "Stand out with this glow-in-the-dark luminor wood grain steering wheel. The green luminor trim lights up in low-light conditions, adding a unique look inside the cabin."
+      },
+      {
+        "id": "SW-003",
+        "name": "NRG 350mm White Woodgrain Steering Wheel",
+        "part_number": "ST-015MC-WT",
+        "category": "Steering Wheels > Wood Grain",
+        "price": 160.00,
+        "diameter_mm": 350,
+        "material": "Woodgrain / Polyurethane",
+        "color": "White",
+        "features": ["Classic white woodgrain finish", "Horn button included", "Bolt pattern: 6x70mm"],
+        "compatible_with": "Universal - requires short hub and quick release adapter",
+        "in_stock": true,
+        "description": "A clean, white woodgrain steering wheel that pairs well with both OEM-plus and fully built interiors. Timeless look with quality NRG construction."
+      },
+      {
+        "id": "SW-004",
+        "name": "Jeff Jones Racing Signature Steering Wheel 2025",
+        "part_number": "JJR-2025",
+        "category": "Steering Wheels > Collaboration",
+        "price": 220.00,
+        "diameter_mm": 330,
+        "material": "Suede / Leather",
+        "color": "Black with signature stitching",
+        "features": ["Jeff Jones Racing signature", "Limited edition", "Suede grip zones", "Alcantara center", "Horn button included"],
+        "compatible_with": "Universal - requires short hub and quick release adapter",
+        "in_stock": true,
+        "description": "A 2025 limited collaboration with Formula Drift competitor Jeff Jones Racing. Features a premium suede grip with custom signature stitching. Collector's item for motorsport fans."
+      },
+      {
+        "id": "SW-005",
+        "name": "NRG x Rome CP Collaboration Steering Wheel",
+        "part_number": "NRG-ROME-CP",
+        "category": "Steering Wheels > Collaboration",
+        "price": 245.00,
+        "diameter_mm": 340,
+        "material": "Alcantara",
+        "color": "Black / Custom",
+        "features": ["NRG x Rome CP co-branded design", "Full Alcantara wrap", "Limited production run", "Horn button included"],
+        "compatible_with": "Universal - requires short hub and quick release adapter",
+        "in_stock": true,
+        "description": "An exclusive collaboration steering wheel between NRG Innovations and Rome CP. Full alcantara wrap with co-branded detailing. Limited run — get it before it's gone."
+      }
+    ],
+
+    "quick_releases": [
+      {
+        "id": "QR-001",
+        "name": "NRG 2.0 Quick Release - Black Body",
+        "part_number": "SRK-200BK",
+        "category": "Quick Releases",
+        "price": 79.00,
+        "version": "2.0",
+        "color": "Black",
+        "features": ["6-bolt pattern (70mm)", "Works with all NRG steering wheels", "Push-button release", "Anodized aluminum body"],
+        "in_stock": true,
+        "description": "The NRG 2.0 Quick Release is the most popular entry-level quick release in the lineup. Easy push-button operation lets you remove the steering wheel in seconds. Perfect for daily drivers and street builds."
+      },
+      {
+        "id": "QR-002",
+        "name": "NRG 2.0 Quick Release - Carbon Fiber Ring",
+        "part_number": "SRK-200CF",
+        "category": "Quick Releases",
+        "price": 132.00,
+        "version": "2.0",
+        "color": "Black with Carbon Fiber ring",
+        "features": ["6-bolt pattern (70mm)", "Real carbon fiber accent ring", "Push-button release", "Anodized aluminum body"],
+        "in_stock": false,
+        "description": "Upgraded version of the 2.0 Quick Release with a real carbon fiber decorative ring. A great visual upgrade for carbon-themed interiors."
+      },
+      {
+        "id": "QR-003",
+        "name": "NRG 2.5 Quick Release",
+        "part_number": "SRK-250",
+        "category": "Quick Releases",
+        "price": 95.00,
+        "version": "2.5",
+        "color": "Black / Various",
+        "features": ["Slim profile design", "6-bolt pattern (70mm)", "Improved locking mechanism vs 2.0", "Anodized aluminum"],
+        "in_stock": true,
+        "description": "The 2.5 Quick Release features a slimmer profile than the 2.0, making it ideal for tighter cockpits. Upgraded locking mechanism for added reliability."
+      },
+      {
+        "id": "QR-004",
+        "name": "NRG 3.0 Quick Release",
+        "part_number": "SRK-650",
+        "category": "Quick Releases",
+        "price": 115.00,
+        "version": "3.0",
+        "color": "Black / Various",
+        "features": ["Rotating collar release (no push button)", "6-bolt pattern (70mm)", "Race-grade construction", "Anodized aluminum"],
+        "in_stock": true,
+        "description": "The 3.0 Quick Release uses a rotating collar mechanism instead of a push button, preferred by many racers for its positive engagement feel. Built to handle the demands of competitive motorsport."
+      },
+      {
+        "id": "QR-005",
+        "name": "NRG Thin Quick Release",
+        "part_number": "SRK-400",
+        "category": "Quick Releases",
+        "price": 89.00,
+        "version": "Thin",
+        "color": "Black / Various",
+        "features": ["Ultra-slim profile", "6-bolt pattern (70mm)", "Ideal for limited space builds", "Anodized aluminum"],
+        "in_stock": true,
+        "description": "The thinnest quick release in NRG's lineup. Designed for builds where cockpit space is extremely limited or for drivers who want minimal offset between the hub and wheel."
+      },
+      {
+        "id": "QR-006",
+        "name": "NRG SFI 2.0 Quick Release",
+        "part_number": "SRK-200-1",
+        "category": "Quick Releases",
+        "price": 145.00,
+        "version": "SFI 2.0",
+        "color": "Black",
+        "features": ["SFI certified for sanctioned racing", "6-bolt pattern (70mm)", "Push-button release", "Required for many SCCA/NASA events"],
+        "in_stock": true,
+        "description": "SFI-certified version of the popular 2.0 Quick Release. Required for drivers competing in SCCA, NASA, and other sanctioned events that mandate SFI-rated components."
+      }
+    ],
+
+    "seats": [
+      {
+        "id": "ST-001",
+        "name": "NRG FRP Fiberglass & Suede Bolster Bucket Seat - Medium",
+        "part_number": "FRP-310",
+        "category": "Seats > Bucket Seat",
+        "price": 311.04,
+        "size": "Medium",
+        "material": "Fiberglass shell / Suede bolsters",
+        "color": "Black",
+        "features": ["Lightweight fiberglass shell", "Suede side bolsters", "Deep side support", "Requires seat bracket (sold separately)", "Harness pass-throughs"],
+        "in_stock": false,
+        "description": "The FRP-310 is a race-inspired bucket seat with a lightweight fiberglass shell and suede bolster accents. Deep side bolsters provide excellent lateral support during aggressive driving. Seat bracket required — use NRG's Seat Chart to find the correct bracket for your vehicle."
+      },
+      {
+        "id": "ST-002",
+        "name": "NRG Echelon Bucket Seat",
+        "part_number": "ECH-001",
+        "category": "Seats > Bucket Seat",
+        "price": 389.00,
+        "size": "Universal",
+        "material": "Fabric / Foam",
+        "color": "Black / Red",
+        "features": ["Aggressive bolster design", "Integrated headrest", "Lightweight construction", "Harness pass-throughs", "Requires seat bracket"],
+        "in_stock": true,
+        "description": "The Echelon is NRG's latest bucket seat design with a bold aesthetic and aggressive bolstering for maximum driver support. Available in black with red accent stitching."
+      },
+      {
+        "id": "ST-003",
+        "name": "NRG Arrow Cloth Sport Seats (Pair)",
+        "part_number": "RSC-800L/R",
+        "category": "Seats > Bucket Seat",
+        "price": 574.17,
+        "size": "Universal",
+        "material": "Cloth",
+        "color": "Black / Various",
+        "features": ["Sold as a pair (driver + passenger)", "Arrow pattern fabric", "Integrated side bolsters", "Street-friendly design", "Requires seat bracket"],
+        "in_stock": false,
+        "description": "The Arrow sport seats come as a matching pair, making them perfect for a complete interior refresh. Sporty cloth fabric with aggressive bolstering that is comfortable enough for daily use."
+      },
+      {
+        "id": "ST-004",
+        "name": "NRG Red Type-R Cloth Sport Seats (Pair)",
+        "part_number": "RSC-210L/R",
+        "category": "Seats > Bucket Seat",
+        "price": 402.80,
+        "size": "Universal",
+        "material": "Cloth",
+        "color": "Red with black stitching",
+        "features": ["Sold as a pair", "Type-R inspired design", "Side bolster support", "Comfortable for street use", "Requires seat bracket"],
+        "in_stock": false,
+        "description": "Bold red Type-R inspired sport seats sold as a pair. Great for Honda builds or any enthusiast looking to add a pop of color to the interior."
+      }
+    ],
+
+    "shift_knobs": [
+      {
+        "id": "SK-001",
+        "name": "NRG Neochrome Short Throw Heavy Weight Shift Knob - Universal",
+        "part_number": "SK-450MC",
+        "category": "Shift Knobs > Ball Type",
+        "price": 44.00,
+        "material": "Stainless Steel",
+        "color": "Neochrome (rainbow chrome)",
+        "weight_grams": 490,
+        "thread_adapters_included": ["M8x1.25", "M10x1.25", "M10x1.5", "M12x1.25"],
+        "in_stock": true,
+        "description": "Heavy-weight neochrome shift knob that improves shift feel through added momentum. The neochrome finish gives a striking rainbow chrome effect. Includes multiple thread adapters for universal fitment."
+      }
+    ],
+
+    "short_hubs": [
+      {
+        "id": "HUB-001",
+        "name": "NRG Short Hub - Honda RSX 02-06 / S2000 00-09",
+        "part_number": "SRK-131H",
+        "category": "Short Hubs",
+        "price": 162.80,
+        "compatible_vehicles": ["2002-2006 Acura RSX", "2000-2009 Honda S2000"],
+        "features": ["Retains OEM horn function", "SRS airbag compatible (check notes)", "Works with NRG quick releases and steering wheels"],
+        "in_stock": false,
+        "description": "Vehicle-specific short hub adapter for the Acura RSX (02-06) and Honda S2000 (00-09). Allows installation of any NRG or aftermarket 6-bolt steering wheel. Always use with a quick release. Note: Installing an aftermarket steering wheel removes the OEM airbag — consult local laws."
+      }
+    ]
+  },
+
+  "faqs": [
+    {
+      "question": "Do I need a short hub AND a quick release?",
+      "answer": "Yes. The short hub bolts to your car's steering column (it is vehicle-specific). The quick release attaches to the hub and allows you to remove the aftermarket steering wheel. Both are required when installing an NRG steering wheel."
+    },
+    {
+      "question": "Will installing an aftermarket steering wheel remove my airbag?",
+      "answer": "Yes. Installing an aftermarket steering wheel removes the OEM airbag. This may be illegal for street use in some states and jurisdictions. NRG recommends checking local laws before modifying your steering system. For track-only builds, this is a common modification."
+    },
+    {
+      "question": "How do I find the right short hub for my car?",
+      "answer": "Use the Short Hub Finder tool on getnrg.com (under Installation Guide > Short Hub Finder). Enter your vehicle's year, make, and model to find the correct hub."
+    },
+    {
+      "question": "What is the difference between Quick Release versions (2.0, 2.5, 3.0)?",
+      "answer": "The main differences are profile thickness and release mechanism. The 2.0 uses a push-button release and is the most common. The 2.5 is slimmer. The 3.0 uses a rotating collar preferred by racers. The Thin QR is the slimmest of all. All use the standard 6x70mm bolt pattern."
+    },
+    {
+      "question": "Are NRG products SFI certified?",
+      "answer": "Select NRG products are SFI certified, such as the SRK-200-1 (SFI 2.0 Quick Release) and certain racing harnesses. For sanctioned racing, always confirm SFI certification on the product listing or contact NRG support."
+    },
+    {
+      "question": "Do you ship internationally?",
+      "answer": "Yes, NRG ships to select international countries. Duties and taxes are the responsibility of the buyer and are not included in the product price or shipping cost."
+    },
+    {
+      "question": "How do I know if my NRG product is authentic?",
+      "answer": "Purchase only from getnrg.com or authorized dealers listed in the Store Locator. Counterfeit NRG products exist and may be dangerous. See the Authentic Guarantee page on getnrg.com for more information."
+    },
+    {
+      "question": "Can I return an installed part?",
+      "answer": "No. Installed or used parts cannot be returned. Returns are only accepted for unused items in original packaging within 30 days of purchase."
+    },
+    {
+      "question": "How do I file a warranty claim?",
+      "answer": "Email support@getnrg.com with your order number, photos of the defect, and a description of the issue. Warranty covers manufacturing defects for 1 year from purchase date."
+    },
+    {
+      "question": "What seat bracket do I need?",
+      "answer": "Seat brackets are vehicle-specific. Use the Seat Chart tool on getnrg.com (Installation Guide > Seat Chart) to find the correct bracket for your vehicle and seat model."
+    }
+  ]
+}
