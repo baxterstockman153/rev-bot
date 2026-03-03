@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import ChatWindow from './components/ChatWindow.jsx';
 import InputBar from './components/InputBar.jsx';
 
@@ -15,9 +15,21 @@ const SUGGESTIONS = [
   'Tell me about racing seats',
 ];
 
+function getSessionId() {
+  let id = localStorage.getItem('rev_session_id');
+  if (!id) {
+    id = `sess_${Math.random().toString(36).slice(2)}${Date.now().toString(36)}`;
+    localStorage.setItem('rev_session_id', id);
+  }
+  return id;
+}
+
 export default function App() {
   const [messages, setMessages] = useState([INITIAL_MESSAGE]);
   const [loading, setLoading] = useState(false);
+  const [escalated, setEscalated] = useState(false);
+  const conversationIdRef = useRef(localStorage.getItem('rev_conv_id') || null);
+  const sessionId = useRef(getSessionId()).current;
 
   const handleSend = async (text) => {
     if (!text.trim() || loading) return;
@@ -31,7 +43,11 @@ export default function App() {
       const res = await fetch('http://localhost:3001/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: nextMessages }),
+        body: JSON.stringify({
+          messages: nextMessages,
+          conversationId: conversationIdRef.current,
+          sessionId,
+        }),
       });
 
       if (!res.ok) {
@@ -39,8 +55,20 @@ export default function App() {
         throw new Error(err.error || 'Server error');
       }
 
-      const { reply } = await res.json();
+      const data = await res.json();
+      const { reply, conversationId } = data;
+
+      if (conversationId && conversationId !== conversationIdRef.current) {
+        conversationIdRef.current = conversationId;
+        localStorage.setItem('rev_conv_id', conversationId);
+      }
+
       setMessages(prev => [...prev, { role: 'assistant', content: reply }]);
+
+      // Check if escalation happened (heuristic based on reply content)
+      if (reply.toLowerCase().includes('human agent') || reply.toLowerCase().includes('follow up shortly')) {
+        setEscalated(true);
+      }
     } catch (err) {
       setMessages(prev => [
         ...prev,
@@ -59,8 +87,16 @@ export default function App() {
         <span style={styles.logo}>
           <span style={styles.logoAccent}>NRG</span> Rev
         </span>
-        <span style={styles.tagline}>Customer Support</span>
+        <span style={styles.tagline}>
+          {escalated ? '🔴 Escalated to human agent' : 'Customer Support'}
+        </span>
       </header>
+
+      {escalated && (
+        <div style={styles.escalationBanner}>
+          A human agent has been notified and will follow up shortly. You can continue chatting here.
+        </div>
+      )}
 
       <div style={styles.body}>
         <ChatWindow messages={messages} loading={loading} />
@@ -112,6 +148,14 @@ const styles = {
     color: '#555',
     letterSpacing: 1,
     textTransform: 'uppercase',
+  },
+  escalationBanner: {
+    background: '#1a0a0a',
+    borderBottom: '1px solid #e63946',
+    color: '#e63946',
+    fontSize: 12,
+    padding: '8px 20px',
+    textAlign: 'center',
   },
   body: {
     display: 'flex',
